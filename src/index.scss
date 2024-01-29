@@ -1,0 +1,12 @@
+@use "./sass/variables" as *;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: $background-color-view;
+}

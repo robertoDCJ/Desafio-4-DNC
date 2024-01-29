@@ -1,0 +1,9 @@
+@use "../../sass/variables" as *;
+
+
+.home {
+    &__todo {
+        display: flex;
+        justify-content: center;
+    }
+}
