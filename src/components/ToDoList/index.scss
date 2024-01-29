@@ -15,7 +15,7 @@
     li {
         color: $white;
         list-style: none;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 600;
     }
 
@@ -45,7 +45,7 @@
     input {
         color: #FFF;
         font-family: Raleway;
-        font-size: 25px;
+        font-size: 20px;
         font-style: italic;
         font-weight: 400;
         line-height: normal;
@@ -53,6 +53,8 @@
 
     img {
         cursor: pointer;
+        width: 20px;
+        height: 20px;
     }
 
     &__new {
@@ -84,7 +86,7 @@
         p {
             color: #FFF;
             font-family: Raleway;
-            font-size: 25px;
+            font-size: 20px;
             font-weight: 400;
 
         }
