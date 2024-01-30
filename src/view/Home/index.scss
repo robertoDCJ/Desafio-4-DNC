@@ -2,8 +2,16 @@
 
 
 .home {
+    position: relative;
+
     &__todo {
         display: flex;
         justify-content: center;
+    }
+
+    &__video-bg {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
     }
 }
