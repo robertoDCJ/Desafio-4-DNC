@@ -2,12 +2,13 @@
 
 .title {
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 0 50px;
 
     h1 {
         color: $white;
         font-family: "Poppins", sans-serif;
         font-size: 24px;
         font-weight: 600;
+        text-shadow: 2px 2px 2px #000000;
     }
 }

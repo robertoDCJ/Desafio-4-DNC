@@ -4,6 +4,8 @@
 .header {
     width: 100%;
     background-color: $constrast-color;
+    box-shadow: -2px 8px 8px #00000028, inset 6px 8px 8px #ffffff4a, inset -6px 0 8px #ffffff4a;
+    opacity: .95;
 
     &__nav {
         display: flex;
