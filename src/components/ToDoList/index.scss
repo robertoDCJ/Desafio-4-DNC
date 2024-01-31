@@ -1,12 +1,28 @@
 @use "../../sass/variables" as *;
 
 .to-do-list {
-    background: #ffffff32;
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(6px);
-    box-shadow: 4px 6px 8px rgba(0,0,0,0.2), inset -4px -4px 12px rgba(0,0,0, .3), inset 10px 10px 12px rgba(255,255,255,0.3);
-    padding: 60px;
+    box-shadow: 4px 6px 8px rgba(0,0,0,0.3), inset -4px -4px 12px rgba(0,0,0, .3), inset 10px 10px 12px rgba(255,255,255,0.2);
+    padding: 60px 80px;
     border-radius: 16px;
     margin-bottom: 50px;
+    height: 50vh;
+    overflow-y: scroll;
+    
+    &::-webkit-scrollbar {
+        background: transparent;
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(149, 149, 149, 0.2);
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-button {
+        height: 15px;
+    }
 
     ul {
         width: 680px;
@@ -47,12 +63,15 @@
 
     input::placeholder,
     input {
-        color: #3D3D3D;
-        font-family: Raleway;
+        color: #2a2a2a;
+        font-family: $font-roboto;
         font-size: 20px;
         font-style: italic;
-        font-weight: 400;
-        line-height: normal;
+        font-weight: 500;
+    }
+
+    input {
+        font-style: normal;
     }
 
     img {
@@ -88,8 +107,8 @@
         }
 
         p {
-            font-family: Raleway;
-            font-size: 20px;
+            font-family: $font-roboto;
+            font-size: 22px;
             font-weight: 400;
 
         }
