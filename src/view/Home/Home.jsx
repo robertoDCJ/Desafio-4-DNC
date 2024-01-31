@@ -4,6 +4,7 @@ import Header from '../../components/Header/Header'
 import Title from '../../components/Title/Title'
 import ToDoList from '../../components/ToDoList/ToDoList'
 import Background from '../../components/Background/Background'
+import Tema from '../../components/Tema/Tema'
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <div className='home__todo'>
                 <ToDoList />
             </div>
+            <Tema />
         </div>
     )
 }
