@@ -9,20 +9,9 @@
     margin-bottom: 50px;
     height: 50vh;
     overflow-y: scroll;
-    
-    &::-webkit-scrollbar {
-        background: transparent;
-        width: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: rgba(149, 149, 149, 0.2);
-        border-radius: 4px;
-    }
-
-    &::-webkit-scrollbar-button {
-        height: 15px;
-    }
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(149, 149, 149, 0.2) transparent;
 
     ul {
         width: 680px;
