@@ -4,7 +4,7 @@
 .header {
     width: 100%;
     background-color: $constrast-color;
-    box-shadow: -2px 8px 8px #00000028, inset 6px 8px 8px #ffffff4a, inset -6px 0 8px #ffffff4a;
+    box-shadow: -2px 8px 8px rgba(0, 0, 0, 0.157), inset 6px 8px 8px rgba(255, 255, 255, 0.29), inset -6px 0 8px rgba(255, 255, 255, 0.29);
     opacity: .95;
 
     &__nav {
