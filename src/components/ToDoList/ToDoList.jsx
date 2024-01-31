@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import "./index.scss"
-import plus from "../../assets/plus.png"
-import check from "../../assets/check.png"
-import checked from "../../assets/checked.png"
-import dump from "../../assets/dump.png"
-import pen from "../../assets/pen.png"
+import plus from "../../assets/plus-black.png"
+import check from "../../assets/check-black.png"
+import checked from "../../assets/checked-black.png"
+import dump from "../../assets/dump-black.png"
+import pen from "../../assets/pen-black.png"
 
 const ToDoList = () => {
     const [items, setItems] = useState([])

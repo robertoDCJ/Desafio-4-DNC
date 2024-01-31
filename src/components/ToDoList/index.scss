@@ -1,10 +1,10 @@
 @use "../../sass/variables" as *;
 
 .to-do-list {
-    position: relative;
     background: #ffffff80;
     padding: 60px;
     border-radius: 16px;
+    margin-bottom: 50px;
 
     ul {
         width: 680px;
