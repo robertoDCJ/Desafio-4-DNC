@@ -3,20 +3,21 @@
 .Tema {
     position: fixed;
     bottom: 50px;
-    right: 50px;
+    right: 30px;
     background: rgba(255, 255, 255, 0.15);
-    padding: 20px 30px;
+    padding: 20px 25px;
     border-radius: 10px;
     color: black;
     box-shadow: 4px 6px 4px rgba(0,0,0,0.3), inset -4px -4px 12px rgba(0,0,0, .3), inset 4px 4px 6px rgba(255,255,255,0.2);
     letter-spacing: 1.5px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     transition: all .5s;
 
     &:hover {
-        transform: translateY(-2px) translateX(-2px);
+        background: rgba(255, 255, 255, 0.4);
+        transform: translateY(-1px) translateX(-1px);
         transition: all .5s;
-        box-shadow: 0px 0px 10000px rgba(255,255,255, 1), inset -6px -6px 10px rgba(0,0,0, .4), inset 2px 2px 6px rgba(255,255,255,0.2);
     }
 }
