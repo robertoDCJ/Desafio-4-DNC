@@ -1,10 +1,11 @@
-import React, { useCallback, useState } from 'react'
 import './index.scss'
 import Header from '../../components/Header/Header'
 import Title from '../../components/Title/Title'
 import ToDoList from '../../components/ToDoList/ToDoList'
 import Background from '../../components/Background/Background'
 import Tema from '../../components/Tema/Tema'
+import { useCallback, useState } from 'react'
+
 
 const Home = () => {
 
@@ -17,6 +18,7 @@ const Home = () => {
     )
 
     console.log(tema);
+
 
     return (
         <div className='home'>

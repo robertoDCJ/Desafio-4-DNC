@@ -1,8 +1,6 @@
-import { useCallback, useState } from "react"
 import "./index.scss"
 
-const Tema = ({changeTheme}) => {
-    
+const Tema = ({ changeTheme }) => {
 
     return (
         <div className="Tema" onClick={changeTheme}>
