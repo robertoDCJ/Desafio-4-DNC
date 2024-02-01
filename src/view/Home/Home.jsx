@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback, useState } from 'react'
 import './index.scss'
 import Header from '../../components/Header/Header'
 import Title from '../../components/Title/Title'
@@ -7,15 +7,26 @@ import Background from '../../components/Background/Background'
 import Tema from '../../components/Tema/Tema'
 
 const Home = () => {
+
+    const [tema, setTema] = useState(true)
+
+    const changeTheme = useCallback(
+        () => {
+            setTema(!tema)
+        }, [tema]
+    )
+
+    console.log(tema);
+
     return (
         <div className='home'>
-            <Background />
+            <Background rendeThema={tema} />
             <Header />
             <Title />
             <div className='home__todo'>
                 <ToDoList />
             </div>
-            <Tema />
+            <Tema changeTheme={changeTheme} />
         </div>
     )
 }

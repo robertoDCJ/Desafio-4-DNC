@@ -1,16 +1,8 @@
 import { useCallback, useState } from "react"
 import "./index.scss"
 
-const Tema = () => {
-    const [tema, setTema] = useState(true)
-
-    const changeTheme = useCallback(
-        () => {
-            setTema(!tema)
-        }, [tema]
-    )
-
-    console.log(tema);
+const Tema = ({changeTheme}) => {
+    
 
     return (
         <div className="Tema" onClick={changeTheme}>

@@ -1,6 +1,9 @@
 import "./index.scss"
 
-const Background = () => {
+const Background = ({rendeThema}) => {
+    
+    console.log(rendeThema);
+
     return (
         <div className="Background">
             <video className="Background__video" autoPlay loop muted>
