@@ -1,10 +1,6 @@
 import React, { useState } from 'react'
 import "./index.scss"
 import plus from "../../assets/plus-black.png"
-// import check from "../../assets/check-black.png"
-// import checked from "../../assets/checked-black.png"
-// import dump from "../../assets/dump-black.png"
-// import pen from "../../assets/pen-black.png"
 import ListItem from './Subcomponents/ListItem'
 
 const ToDoList = () => {
@@ -49,6 +45,13 @@ const ToDoList = () => {
         setItems(updatedItems);
     }
 
+    const propsListItems = {
+        toggleCheck: toggleCheck,
+        toggleDelet: toggleDelet,
+        toggleEdit: toggleEdit,
+        items: items,
+    }
+
     return (
         <div className='to-do-list'>
             <ul>
@@ -58,21 +61,7 @@ const ToDoList = () => {
             </ul>
             <div id='container'>
                 <div id='list-itens'>
-                    <ListItem toggleCheck={toggleCheck} items={items} toggleDelet={toggleDelet} toggleEdit={toggleEdit} />
-                    {/* {items.map((item, index) => (
-                        <div key={index} className='to-do-list__new'>
-                            <div>
-                                <p>{item.text}</p>
-                            </div>
-                            <div>
-                                <img id='check' onClick={() => toggleCheck(index)} src={item.checked ? checked : check} alt='check' />
-                            </div>
-                            <div>
-                                <img onClick={() => toggleEdit(index)} src={pen} alt='editar' />
-                                <img onClick={() => toggleDelet(index)} src={dump} alt='deletar' />
-                            </div>
-                        </div>
-                    ))} */}
+                    <ListItem {...propsListItems} />
                 </div>
                 <div className='to-do-list__new-to-do'>
                     <input type="text" id='newInput' placeholder='Nova tarefa...' value={newInput} onChange={(e) => setNewInput(e.target.value)} />
