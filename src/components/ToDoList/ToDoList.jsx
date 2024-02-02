@@ -5,6 +5,7 @@ import check from "../../assets/check-black.png"
 import checked from "../../assets/checked-black.png"
 import dump from "../../assets/dump-black.png"
 import pen from "../../assets/pen-black.png"
+import Checked from './Subcomponents/Checked'
 
 const ToDoList = () => {
     const [items, setItems] = useState([])
