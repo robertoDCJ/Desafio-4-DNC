@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import "./index.scss"
 import plus from "../../assets/plus-black.png"
-import check from "../../assets/check-black.png"
-import checked from "../../assets/checked-black.png"
-import dump from "../../assets/dump-black.png"
-import pen from "../../assets/pen-black.png"
-import Checked from './Subcomponents/Checked'
+// import check from "../../assets/check-black.png"
+// import checked from "../../assets/checked-black.png"
+// import dump from "../../assets/dump-black.png"
+// import pen from "../../assets/pen-black.png"
+import ListItem from './Subcomponents/ListItem'
 
 const ToDoList = () => {
     const [items, setItems] = useState([])
@@ -58,7 +58,8 @@ const ToDoList = () => {
             </ul>
             <div id='container'>
                 <div id='list-itens'>
-                    {items.map((item, index) => (
+                    <ListItem toggleCheck={toggleCheck} items={items} toggleDelet={toggleDelet} toggleEdit={toggleEdit} />
+                    {/* {items.map((item, index) => (
                         <div key={index} className='to-do-list__new'>
                             <div>
                                 <p>{item.text}</p>
@@ -71,7 +72,7 @@ const ToDoList = () => {
                                 <img onClick={() => toggleDelet(index)} src={dump} alt='deletar' />
                             </div>
                         </div>
-                    ))}
+                    ))} */}
                 </div>
                 <div className='to-do-list__new-to-do'>
                     <input type="text" id='newInput' placeholder='Nova tarefa...' value={newInput} onChange={(e) => setNewInput(e.target.value)} />
