@@ -40,9 +40,25 @@ const ToDoList = () => {
         setNewInput('')
     }
 
+    const checkingItem = (index) => {
+        if (updatedItems[index].checked) {
+            const allItens = [...items]
+
+            setTimeout(() => {
+                console.log(allItens);
+
+                allItens.splice(index, 1)
+                setItems(allItens)
+
+                console.log(allItens)
+            }, 3000)
+        }
+    }
+
     const toggleCheck = (index) => {
-        updatedItems[index].checked = !updatedItems[index].checked;
-        setItems(updatedItems);
+        updatedItems[index].checked = !updatedItems[index].checked
+        setItems(updatedItems)
+        checkingItem(index)
     }
 
     const propsListItems = {
@@ -78,7 +94,7 @@ const ToDoList = () => {
                         </div>
                     </div>
                 )}
-                
+
                 {itemToEdit !== null && (
                     <div key={itemToEdit} className='to-do-list__delet'>
                         <h1>Deseja editar esse item?</h1>

@@ -5,8 +5,6 @@ import dump from "../../../assets/dump-black.png"
 import pen from "../../../assets/pen-black.png"
 
 const ListItem = ({ items, toggleCheck, toggleEdit, toggleDelet }) => {
-
-
     return (
         <div>
             {items.map((item, index) => (
