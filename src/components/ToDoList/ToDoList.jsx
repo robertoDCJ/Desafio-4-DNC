@@ -47,8 +47,10 @@ const ToDoList = () => {
             setTimeout(() => {
                 console.log(allItens);
 
-                allItens.splice(index, 1)
-                setItems(allItens)
+                if (updatedItems[index].checked) {
+                    allItens.splice(index, 1)
+                    setItems(allItens)
+                }
 
                 console.log(allItens)
             }, 3000)
